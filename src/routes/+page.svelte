@@ -2,8 +2,6 @@
 	import Icon from '@iconify/svelte';
 
 	export let data;
-
-	console.log(data);
 </script>
 
 <svelte:head>
