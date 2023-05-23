@@ -1,5 +1,6 @@
 <script>
 	import Icon from '@iconify/svelte';
+	import RotateWords from '$lib/components/RotateWords.svelte';
 
 	export let data;
 </script>
@@ -16,7 +17,8 @@
 	<div class="grid w-full place-items-center flex-1 bg-base-100 p-6">
 		<div class="w-full pt-20 md:pt-0">
 			<h1 class="text-5xl md:text-6xl lg:text-7xl font-bold">
-				Full-stack engineer with <span class="text-primary">13+ years</span> experience building beautiful
+				Full-stack engineer with <span class="text-primary">13+ years</span> experience building <RotateWords
+				/>
 				applications.
 			</h1>
 			<p class="py-6">
