@@ -1,7 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
 
-	let words = ['beautiful', 'usable', 'responsive', 'accessible'];
+	export let words = [];
 	let current = 0;
 
 	onMount(() => {
