@@ -3,7 +3,7 @@ import octokit from '$lib/octokit';
 export async function load(event) {
 	const projects = await octokit.request('GET /user/repos', {
 		visibility: 'public',
-		sort: 'updated',
+		sort: 'created',
 		direction: 'desc',
 		per_page: 4,
 		page: 1,
