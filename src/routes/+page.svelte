@@ -33,8 +33,11 @@
 	<div class="grid w-full place-items-start flex-0 bg-base-100 p-6">
 		<div class="w-full flex flex-col">
 			<h2 class="uppercase font-semibold opacity-50 py-4 flex items-center gap-2">
-				<a href="https://github.com/dylan-gluck" target="_blank" class="hover:text-primary"
-					><Icon icon="fontisto:github" class="inline-block" /></a
+				<a
+					href="https://github.com/dylan-gluck"
+					target="_blank"
+					aria-label="Github"
+					class="hover:text-primary"><Icon icon="fontisto:github" class="inline-block" /></a
 				>
 				<span>Recent Projects</span>
 			</h2>
