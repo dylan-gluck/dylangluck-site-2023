@@ -1,15 +1,12 @@
 <script>
 	import '../app.css';
 	import NavItems from '$lib/components/NavItems.svelte';
-	import Navbar from '$lib/components/Navbar.svelte';
 	import { theme } from '$lib/theme.js';
 </script>
 
 <div class="drawer" data-theme={$theme}>
 	<input id="nav-drawer" type="checkbox" class="drawer-toggle" />
 	<div class="drawer-content">
-		<!-- Navbar -->
-		<Navbar />
 		<!-- Page content here -->
 		<slot />
 	</div>

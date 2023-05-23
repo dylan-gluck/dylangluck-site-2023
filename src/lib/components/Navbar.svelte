@@ -3,7 +3,7 @@
 	import NavItems from '$lib/components/NavItems.svelte';
 </script>
 
-<div class="w-full navbar bg-base-100 text-base-content md:fixed">
+<div class="w-full navbar bg-base-100 text-base-content flex-0">
 	<h1 class="flex-1 px-2 mx-2 font-bold">Dylan Navajas Gluck</h1>
 	<div class="flex-none hidden lg:block">
 		<ul class="flex gap-6 px-2 mx-2">
