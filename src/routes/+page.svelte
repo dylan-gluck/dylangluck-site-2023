@@ -46,7 +46,7 @@
 						class="flex flex-col gap-1 cursor-pointer group"
 					>
 						<span class="font-bold group-hover:text-primary">{project.name}</span>
-						<p class="text-sm line-clamp-3">
+						<p class="text-sm line-clamp-2">
 							{project.description}
 						</p>
 					</a>

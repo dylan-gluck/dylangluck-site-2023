@@ -1,5 +1,6 @@
 <script>
 	import Icon from '@iconify/svelte';
+	import { theme } from '$lib/theme.js';
 </script>
 
 <li><a href="/" class="hover:cursor-pointer text-primary">Home</a></li>
@@ -25,8 +26,14 @@
 	>
 </li>
 <li>
-	<!-- svelte-ignore a11y-missing-attribute -->
-	<button class="pt-1 text-lg hover:cursor-pointer hover:text-primary"
-		><Icon icon="ph:moon" /></button
-	>
+	{#if $theme == 'emerald'}
+		<button class="pt-1 text-lg hover:cursor-pointer hover:text-primary" on:click={theme.setDark}
+			><Icon icon="ph:moon" /></button
+		>
+	{/if}
+	{#if $theme == 'forest'}
+		<button class="pt-1 text-lg hover:cursor-pointer hover:text-primary" on:click={theme.setLight}
+			><Icon icon="ph:sun" /></button
+		>
+	{/if}
 </li>
