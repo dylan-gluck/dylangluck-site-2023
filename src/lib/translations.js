@@ -6,7 +6,7 @@ export default {
 		'nav.resume': 'Résumé',
 		'hero.title_1':
 			'Full-stack engineer with <span class="text-primary">13+ years</span> experience building',
-		'hero.title_2': 'applications.',
+		'hero.title_2': 'applications',
 		'hero.words_1': 'beautiful',
 		'hero.words_2': 'usable',
 		'hero.words_3': 'responsive',
@@ -21,7 +21,7 @@ export default {
 		'nav.resume': 'Currículum',
 		'hero.title_1':
 			'Ingeniero de pila completa con <span class="text-primary">13+ años</span> de experiencia en la creación de aplicaciones',
-		'hero.title_2': '.',
+		'hero.title_2': '',
 		'hero.words_1': 'hermosas',
 		'hero.words_2': 'utilizables',
 		'hero.words_3': 'responsivas',
@@ -36,7 +36,7 @@ export default {
 		'nav.resume': 'CV',
 		'hero.title_1':
 			'Full-stack engineer met <span class="text-primary">13+ jaar</span> ervaring in het bouwen van',
-		'hero.title_2': 'applicaties.',
+		'hero.title_2': 'applicaties',
 		'hero.words_1': 'prachtige',
 		'hero.words_2': 'bruikbare',
 		'hero.words_3': 'responsieve',
