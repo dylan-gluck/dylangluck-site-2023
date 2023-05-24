@@ -1,7 +1,8 @@
 <script>
 	import { onMount } from 'svelte';
+	import { t } from '$lib/i18n';
 
-	export let words = [];
+	let words = ['hero.words_1', 'hero.words_2', 'hero.words_3', 'hero.words_4'];
 	let current = 0;
 
 	onMount(() => {
@@ -18,7 +19,7 @@
 <span class="rotate-words">
 	{#each words as word, i (i)}
 		{#if i === current}
-			<span class="relative slide-in">{word}</span>
+			<span class="relative slide-in">{$t(word)}</span>
 		{/if}
 	{/each}
 </span>

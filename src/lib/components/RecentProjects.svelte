@@ -1,5 +1,6 @@
 <script>
 	import Icon from '@iconify/svelte';
+	import { t } from '$lib/i18n';
 
 	export let projects = [];
 </script>
@@ -13,7 +14,7 @@
 				aria-label="Github profile for Dylan Gluck"
 				class="hover:text-primary"><Icon icon="fontisto:github" class="inline-block" /></a
 			>
-			<span>Recent Projects</span>
+			<span>{$t('hero.recent')}</span>
 		</h2>
 		<div class="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
 			{#each projects as project}
