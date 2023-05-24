@@ -1,7 +1,7 @@
 <script>
 	import Icon from '@iconify/svelte';
 	import NavItems from '$lib/components/NavItems.svelte';
-	import LangSwitch from '$lib/LangSwitch.svelte';
+	import LangSwitch from '$lib/components/LangSwitch.svelte';
 </script>
 
 <div class="w-full navbar bg-base-100 text-base-content flex-0">
