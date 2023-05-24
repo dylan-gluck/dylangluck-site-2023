@@ -1,7 +1,8 @@
 <script>
 	import '../app.css';
-	import NavItems from '$lib/components/NavItems.svelte';
 	import { theme } from '$lib/theme.js';
+	import NavItems from '$lib/components/NavItems.svelte';
+	import LangSwitch from '$lib/components/LangSwitch.svelte';
 </script>
 
 <div class="drawer" data-theme={$theme}>
@@ -15,6 +16,7 @@
 		<ul class="flex flex-col gap-10 text-2xl font-bold pt-20 px-10 w-80 bg-base-200">
 			<!-- Sidebar content here -->
 			<NavItems />
+			<LangSwitch />
 		</ul>
 	</div>
 </div>

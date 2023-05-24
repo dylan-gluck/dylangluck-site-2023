@@ -1,6 +1,7 @@
 <script>
 	import Icon from '@iconify/svelte';
 	import NavItems from '$lib/components/NavItems.svelte';
+	import LangSwitch from '$lib/LangSwitch.svelte';
 </script>
 
 <div class="w-full navbar bg-base-100 text-base-content flex-0">
@@ -9,6 +10,7 @@
 		<ul class="flex gap-6 px-2 mx-2">
 			<!-- Navbar menu content here -->
 			<NavItems />
+			<LangSwitch header="true" />
 		</ul>
 	</div>
 	<div class="flex-none lg:hidden">
