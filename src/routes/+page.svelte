@@ -14,8 +14,8 @@
 	/>
 </svelte:head>
 
-<div class="flex flex-col min-h-screen">
+<section class="flex flex-col min-h-screen">
 	<Navbar />
 	<HomeHero />
 	<RecentProjects projects={data.projects} />
-</div>
+</section>
