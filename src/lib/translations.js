@@ -21,7 +21,7 @@ export default {
 		'nav.resume': 'Currículum',
 		'hero.title_1':
 			'Ingeniero de pila completa con <span class="text-primary">13+ años</span> de experiencia en la creación de aplicaciones',
-		'hero.title_2': '',
+		'hero.title_2': ' ',
 		'hero.words_1': 'hermosas',
 		'hero.words_2': 'utilizables',
 		'hero.words_3': 'responsivas',
