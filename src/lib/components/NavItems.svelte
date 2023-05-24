@@ -2,11 +2,15 @@
 	import Icon from '@iconify/svelte';
 	import { theme } from '$lib/theme';
 	import { t } from '$lib/i18n';
+	import { page } from '$app/stores';
 </script>
 
 <li>
-	<a href="/" aria-label={$t('nav.home')} class="hover:cursor-pointer text-primary"
-		>{$t('nav.home')}</a
+	<a
+		href="/"
+		aria-label={$t('nav.home')}
+		class="hover:cursor-pointer"
+		class:text-primary={$page.url.pathname == '/'}>{$t('nav.home')}</a
 	>
 </li>
 <li>
