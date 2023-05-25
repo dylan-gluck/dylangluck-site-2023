@@ -19,8 +19,6 @@ export async function POST({ request }) {
 			]
 		});
 
-		console.log(completion.data.choices[0].message.content);
-
 		return new Response(JSON.stringify({ haiku: completion.data.choices[0].message.content }), {
 			status: 200,
 			headers: { 'Content-Type': 'application/json' }
