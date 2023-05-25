@@ -12,13 +12,16 @@ export default {
 		'hero.words_3': 'responsive',
 		'hero.words_4': 'accessible',
 		'hero.currently': 'Currently: UX Engineering Manager',
-		'hero.recent': 'Recent Projects'
+		'hero.recent': 'Recent Projects',
+		'gpt.prompt': 'Write a haiku about UX design in English',
+		'gpt.loading': 'Thinking...',
+		'gpt.signature': '&mdash; With love, ChatGPT'
 	},
 	es: {
 		'nav.home': 'Inicial',
 		'nav.github': 'Github',
 		'nav.linkedin': 'LinkedIn',
-		'nav.resume': 'Currículum',
+		'nav.resume': 'CV',
 		'hero.title_1':
 			'Ingeniero de pila completa con <span class="text-primary">13+ años</span> de experiencia en la creación de aplicaciones',
 		'hero.title_2': ' ',
@@ -27,7 +30,10 @@ export default {
 		'hero.words_3': 'responsivas',
 		'hero.words_4': 'accesibles',
 		'hero.currently': 'Actualmente: Gerente de Ingeniería UX',
-		'hero.recent': 'Proyectos Recientes'
+		'hero.recent': 'Proyectos Recientes',
+		'gpt.prompt': 'Escribe un haiku sobre diseño UX en español',
+		'gpt.loading': 'Pensando...',
+		'gpt.signature': '&mdash; Con amor, ChatGPT'
 	},
 	nl: {
 		'nav.home': 'Startpagina',
@@ -42,6 +48,9 @@ export default {
 		'hero.words_3': 'responsieve',
 		'hero.words_4': 'toegankelijke',
 		'hero.currently': 'Momenteel: Manager UX Engineering',
-		'hero.recent': 'Recente projecten'
+		'hero.recent': 'Recente projecten',
+		'gpt.prompt': 'Schrijf een haiku over UX design in het Nederlands',
+		'gpt.loading': 'Denkend...',
+		'gpt.signature': '&mdash; Met liefde, ChatGPT'
 	}
 };

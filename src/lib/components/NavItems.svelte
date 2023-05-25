@@ -30,14 +30,6 @@
 	>
 </li>
 <li>
-	<a
-		href="/downloads/dylan-gluck_resume.pdf"
-		target="_blank"
-		aria-label={$t('nav.resume')}
-		class="hover:cursor-pointer hover:text-primary">{$t('nav.resume')}</a
-	>
-</li>
-<li>
 	{#if $theme == 'emerald'}
 		<button
 			aria-label="dark"

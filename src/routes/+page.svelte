@@ -1,7 +1,8 @@
 <script>
-	import HomeHero from '$lib/components/HomeHero.svelte';
-	import RecentProjects from '$lib/components/RecentProjects.svelte';
 	import Navbar from '$lib/components/Navbar.svelte';
+	import RecentProjects from '$lib/components/RecentProjects.svelte';
+	import HomeHero from '$lib/components/HomeHero.svelte';
+	import HomeHaiku from '$lib/components/HomeHaiku.svelte';
 
 	export let data;
 </script>
@@ -19,3 +20,5 @@
 	<HomeHero />
 	<RecentProjects projects={data.projects} />
 </section>
+
+<HomeHaiku />

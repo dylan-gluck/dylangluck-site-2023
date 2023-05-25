@@ -19,7 +19,7 @@
 <span class="rotate-words">
 	{#each words as word, i (i)}
 		{#if i === current}
-			<span class="relative slide-in">{$t(word)}</span>
+			<span class="relative z-0 slide-in">{$t(word)}</span>
 		{/if}
 	{/each}
 </span>
