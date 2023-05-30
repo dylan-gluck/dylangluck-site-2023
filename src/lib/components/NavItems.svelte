@@ -30,16 +30,16 @@
 	>
 </li>
 <li>
-	{#if $theme == 'emerald'}
+	{#if $theme == 'light'}
 		<button
-			aria-label="dark"
+			aria-label="Enable dark mode"
 			class="pt-1 text-lg hover:cursor-pointer hover:text-primary"
 			on:click={theme.setDark}><Icon icon="ph:moon" /></button
 		>
 	{/if}
-	{#if $theme == 'forest'}
+	{#if $theme == 'dark'}
 		<button
-			aria-label="light"
+			aria-label="Enable light mode"
 			class="pt-1 text-lg hover:cursor-pointer hover:text-primary"
 			on:click={theme.setLight}><Icon icon="ph:sun" /></button
 		>
