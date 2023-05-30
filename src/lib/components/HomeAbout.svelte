@@ -1,7 +1,7 @@
-<section class="grid place-items-center min-h-screen bg-base-200 text-base-content">
+<section class="bg-base-200 text-base-content">
 	<div class="py-10 mx-auto">
 		<div class="p-6 md:max-w-2xl xl:max-w-3xl">
-			<h2 class="text-2xl font-bold leading-none sm:text-4xl mb-2">Quo et liber recusabo</h2>
+			<h2 class="mb-2 text-2xl font-bold leading-none sm:text-4xl">Quo et liber recusabo</h2>
 			<p class="md:my-4">
 				Graeco causae vim cu, alii option ancillae sea ut. Ad mea alii pertinax, ei sed falli
 				ponderum adipisci. Vis iisque scripta cu. Sea ex mollis consulatu dissentiet, dicta viris
@@ -13,7 +13,7 @@
 				class="flex justify-start col-span-full md:col-span-1 md:flex-col md:justify-start md:items-start"
 			>
 				<button
-					class="p-2 border-b-2 md:border-l-2 md:border-b-0 md:py-3 border-gray-300 text-gray-400"
+					class="p-2 text-gray-400 border-b-2 border-gray-300 md:border-l-2 md:border-b-0 md:py-3"
 					>Mucius</button
 				>
 				<button
@@ -21,15 +21,15 @@
 					>Fabellas</button
 				>
 				<button
-					class="px-2 py-1 border-b-2 md:border-l-2 md:border-b-0 md:py-3 border-gray-300 text-gray-400"
+					class="px-2 py-1 text-gray-400 border-b-2 border-gray-300 md:border-l-2 md:border-b-0 md:py-3"
 					>Aperiam</button
 				>
 				<button
-					class="px-2 py-1 border-b-2 md:border-l-2 md:border-b-0 md:py-3 border-gray-300 text-gray-400"
+					class="px-2 py-1 text-gray-400 border-b-2 border-gray-300 md:border-l-2 md:border-b-0 md:py-3"
 					>Nonumy</button
 				>
 				<button
-					class="px-2 py-1 border-b-2 md:border-l-2 md:border-b-0 md:py-3 border-gray-300 text-gray-400"
+					class="px-2 py-1 text-gray-400 border-b-2 border-gray-300 md:border-l-2 md:border-b-0 md:py-3"
 					>Propriae</button
 				>
 			</div>
