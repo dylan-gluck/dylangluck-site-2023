@@ -20,5 +20,3 @@
 	<HomeHero />
 	<RecentProjects projects={data.projects} />
 </section>
-
-<HomeHaiku />
