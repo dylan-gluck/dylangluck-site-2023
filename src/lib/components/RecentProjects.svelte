@@ -5,9 +5,9 @@
 	export let projects = [];
 </script>
 
-<div class="grid w-full place-items-start flex-0 bg-base-100 p-6">
-	<div class="w-full flex flex-col">
-		<h2 class="uppercase font-semibold opacity-50 py-4 flex items-center gap-2">
+<div class="grid w-full p-6 place-items-start flex-0 bg-base-100">
+	<div class="flex flex-col w-full">
+		<h2 class="flex items-center gap-2 py-4 font-semibold uppercase opacity-50">
 			<a
 				href="https://github.com/dylan-gluck"
 				target="_blank"
@@ -16,7 +16,7 @@
 			>
 			<span>{$t('hero.recent')}</span>
 		</h2>
-		<div class="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+		<div class="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
 			{#each projects as project}
 				<a
 					href={project.html_url}
