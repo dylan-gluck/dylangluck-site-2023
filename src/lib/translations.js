@@ -34,23 +34,5 @@ export default {
 		'gpt.prompt': 'Escribe un haiku sobre diseño UX en español',
 		'gpt.loading': 'Pensando...',
 		'gpt.signature': '&mdash; Con amor, ChatGPT'
-	},
-	nl: {
-		'nav.home': 'Startpagina',
-		'nav.github': 'Github',
-		'nav.linkedin': 'LinkedIn',
-		'nav.resume': 'CV',
-		'hero.title_1':
-			'Full-stack engineer met <span class="text-primary">13+ jaar</span> ervaring in het bouwen van',
-		'hero.title_2': 'applicaties',
-		'hero.words_1': 'prachtige',
-		'hero.words_2': 'bruikbare',
-		'hero.words_3': 'responsieve',
-		'hero.words_4': 'toegankelijke',
-		'hero.currently': 'Momenteel: Manager UX Engineering',
-		'hero.recent': 'Recente projecten',
-		'gpt.prompt': 'Schrijf een haiku over UX design in het Nederlands',
-		'gpt.loading': 'Denkend...',
-		'gpt.signature': '&mdash; Met liefde, ChatGPT'
 	}
 };
