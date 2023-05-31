@@ -4,7 +4,7 @@
 	import LangSwitch from '$lib/components/LangSwitch.svelte';
 </script>
 
-<div class="z-10 w-full navbar text-base-content flex-0 bg-base-100 bg-opacity-80 backdrop-blur-md">
+<div class="fixed z-10 w-full bg-transparent navbar text-base-content flex-0">
 	<a href="/" class="flex-1 px-2 mx-2 font-bold">Dylan Navajas Gluck</a>
 	<div class="flex-none hidden lg:block">
 		<ul class="flex gap-6 px-2 mx-2">
