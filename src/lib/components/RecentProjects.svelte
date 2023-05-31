@@ -6,7 +6,7 @@
 </script>
 
 <div class="grid w-full p-6 place-items-start flex-0 bg-base-100">
-	<div class="flex flex-col w-full">
+	<div class="container flex flex-col mx-auto">
 		<h2 class="flex items-center gap-2 py-4 font-semibold uppercase opacity-50">
 			<a
 				href="https://github.com/dylan-gluck"

@@ -30,6 +30,14 @@
 	>
 </li>
 <li>
+	<a
+		href="/resume"
+		aria-label={$t('nav.resume')}
+		class="hover:cursor-pointer hover:text-primary"
+		class:text-primary={$page.url.pathname == '/resume'}>{$t('nav.resume')}</a
+	>
+</li>
+<li>
 	{#if $theme == 'light'}
 		<button
 			aria-label="Enable dark mode"
