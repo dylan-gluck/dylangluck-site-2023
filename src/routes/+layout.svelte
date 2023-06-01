@@ -13,7 +13,7 @@
 	</div>
 	<div class="drawer-side">
 		<label for="nav-drawer" class="drawer-overlay" />
-		<ul class="flex flex-col gap-10 text-2xl font-bold pt-20 px-10 w-80 bg-base-200">
+		<ul class="flex flex-col h-full gap-10 px-10 pt-20 text-2xl font-bold w-80 bg-base-200">
 			<!-- Sidebar content here -->
 			<NavItems />
 			<LangSwitch />
