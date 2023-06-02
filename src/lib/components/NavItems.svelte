@@ -9,7 +9,7 @@
 	<a
 		href="/"
 		aria-label={$t('nav.home')}
-		class="hover:cursor-pointer"
+		class="cursor-pointer"
 		class:text-primary={$page.url.pathname == '/'}>{$t('nav.home')}</a
 	>
 </li>
@@ -18,7 +18,7 @@
 		href="https://github.com/dylan-gluck"
 		target="_blank"
 		aria-label={$t('nav.github')}
-		class="hover:cursor-pointer hover:text-primary">{$t('nav.github')}</a
+		class="cursor-pointer md:hover:text-primary">{$t('nav.github')}</a
 	>
 </li>
 <li>
@@ -26,14 +26,14 @@
 		href="https://www.linkedin.com/in/dylangluck/"
 		target="_blank"
 		aria-label={$t('nav.linkedin')}
-		class="hover:cursor-pointer hover:text-primary">{$t('nav.linkedin')}</a
+		class="cursor-pointer md:hover:text-primary">{$t('nav.linkedin')}</a
 	>
 </li>
 <li>
 	<a
 		href="/resume"
 		aria-label={$t('nav.resume')}
-		class="hover:cursor-pointer hover:text-primary"
+		class="cursor-pointer md:hover:text-primary"
 		class:text-primary={$page.url.pathname == '/resume'}>{$t('nav.resume')}</a
 	>
 </li>
@@ -41,14 +41,14 @@
 	{#if $theme == 'light'}
 		<button
 			aria-label="Enable dark mode"
-			class="pt-1 text-lg hover:cursor-pointer hover:text-primary"
+			class="pt-1 text-lg cursor-pointer md:hover:text-primary"
 			on:click={theme.setDark}><Icon icon="ph:moon" /></button
 		>
 	{/if}
 	{#if $theme == 'dark'}
 		<button
 			aria-label="Enable light mode"
-			class="pt-1 text-lg hover:cursor-pointer hover:text-primary"
+			class="pt-1 text-lg cursor-pointer md:hover:text-primary"
 			on:click={theme.setLight}><Icon icon="ph:sun" /></button
 		>
 	{/if}

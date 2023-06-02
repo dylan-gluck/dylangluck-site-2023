@@ -1,5 +1,6 @@
 <script>
 	import { onMount } from 'svelte';
+	import { beforeNavigate } from '$app/navigation';
 	import { fade, slide } from 'svelte/transition';
 	import { backOut } from 'svelte/easing';
 	import { fullTime, contracts } from './data';
@@ -15,6 +16,10 @@
 		setTimeout(() => {
 			animate = true;
 		}, 200);
+	});
+
+	beforeNavigate(() => {
+		animate = false;
 	});
 </script>
 

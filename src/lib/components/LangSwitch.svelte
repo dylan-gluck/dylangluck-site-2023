@@ -8,13 +8,13 @@
 <li class="dropdown" class:dropdown-end={header} class:dropdown-hover={header}>
 	<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
 	<!-- svelte-ignore a11y-label-has-associated-control -->
-	<label tabindex="0" class="hover:cursor-pointer hover:text-primary leading-none"
+	<label tabindex="0" class="leading-none cursor-pointer md:hover:text-primary"
 		>{$locale} <Icon icon="icon-park-solid:down-one" class="inline" /></label
 	>
 	<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
 	<ul
 		tabindex="0"
-		class="dropdown-content menu p-2 shadow bg-base-200 rounded-box w-18 text-center"
+		class="p-2 text-center shadow dropdown-content menu bg-base-200 rounded-box w-18"
 	>
 		{#each locales as l}
 			<li>

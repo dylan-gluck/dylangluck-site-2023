@@ -14,7 +14,7 @@
 	<summary
 		in:slide={{ axis: 'x', delay: 300, easing: backOut }}
 		out:fade
-		class="transition-all btn btn-circle hover:btn-info"
+		class="transition-all btn btn-circle md:hover:btn-info"
 		on:click={() => {
 			chatOpen = !chatOpen;
 		}}

@@ -1,5 +1,6 @@
 <script>
 	import { onMount } from 'svelte';
+	import { beforeNavigate } from '$app/navigation';
 	import { slide, fade } from 'svelte/transition';
 	import { backOut } from 'svelte/easing';
 	import { t, locale } from '$lib/i18n';
@@ -12,6 +13,10 @@
 		setTimeout(() => {
 			animate = true;
 		}, 300);
+	});
+
+	beforeNavigate(() => {
+		animate = false;
 	});
 </script>
 
@@ -38,7 +43,7 @@
 					<a
 						href="http://unqork.com"
 						aria-label="Unqork company website"
-						class="no-underline cursor-pointer link hover:text-primary"
+						class="no-underline cursor-pointer link md:hover:text-primary"
 						target="_blank">@Unqork</a
 					>
 				</p>
