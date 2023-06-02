@@ -59,9 +59,9 @@
 			chatOpen = !chatOpen;
 		}}
 		>{#if chatOpen}
-			<div in:slide><Icon icon="iconamoon:close" class="text-2xl" /></div>
+			<span in:slide><Icon icon="iconamoon:close" class="text-2xl" /></span>
 		{:else}
-			<div in:slide><Icon icon="basil:chat-solid" class="text-2xl" /></div>
+			<span in:slide><Icon icon="basil:chat-solid" class="text-2xl" /></span>
 		{/if}</summary
 	>
 	{#if chatOpen}
