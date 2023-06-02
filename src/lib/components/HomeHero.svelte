@@ -1,6 +1,5 @@
 <script>
 	import { onMount } from 'svelte';
-	import { beforeNavigate } from '$app/navigation';
 	import { slide, fade } from 'svelte/transition';
 	import { backOut } from 'svelte/easing';
 	import { t, locale } from '$lib/i18n';
@@ -13,10 +12,6 @@
 		setTimeout(() => {
 			animate = true;
 		}, 300);
-	});
-
-	beforeNavigate(() => {
-		animate = false;
 	});
 </script>
 
@@ -48,7 +43,7 @@
 					>
 				</p>
 			{/key}
-			<div class="fixed bottom-0 flex justify-end w-full px-10 py-6 flex-0 md:relative md:py-0">
+			<div class="flex justify-end w-full px-10 py-6 flex-0 md:relative md:py-0">
 				<ChatPopup />
 			</div>
 		{/if}
