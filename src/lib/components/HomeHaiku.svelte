@@ -16,17 +16,17 @@
 	})($locale);
 </script>
 
-<section class="grid place-items-center min-h-screen bg-primary text-primary-content">
+<section class="grid min-h-screen place-items-center bg-primary text-primary-content">
 	<div class="py-10">
-		<h5 class="text-sm uppercase font-bold mb-5">{$t('gpt.prompt')}</h5>
+		<h5 class="mb-5 text-sm font-bold uppercase">{$t('gpt.prompt')}</h5>
 		{#await haikuPromise}
-			<h4 class="text-xl md:text-4xl font-bold mb-5">
+			<h4 class="mb-5 text-xl font-bold md:text-4xl">
 				<Icon icon="ph:spinner" class="inline-block mr-2 animate-spin" />
 				{$t('gpt.loading')}
 			</h4>
 		{:then haiku}
-			<h4 class="text-xl md:text-4xl font-bold mb-5">{@html haiku}</h4>
-			<span class="uppercase text-sm">{@html $t('gpt.signature')}</span>
+			<h4 class="mb-5 text-xl font-bold md:text-4xl">{@html haiku}</h4>
+			<span class="text-sm uppercase">{@html $t('gpt.signature')}</span>
 		{/await}
 	</div>
 </section>
