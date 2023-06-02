@@ -33,7 +33,8 @@
 			<button
 				in:slide={{ axis: 'x', delay: 300, easing: backOut }}
 				out:fade
-				class="btn btn-circle btn-info"><Icon icon="tabler:download" class="text-xl" /></button
+				class="transition-all btn btn-circle hover:btn-info"
+				><Icon icon="tabler:download" class="text-xl" /></button
 			>
 		{/if}
 	</div>

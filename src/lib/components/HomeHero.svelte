@@ -4,6 +4,7 @@
 	import { backOut } from 'svelte/easing';
 	import { t } from '$lib/i18n';
 	import RotateWords from '$lib/components/RotateWords.svelte';
+	import ChatPopup from '$lib/components/ChatPopup.svelte';
 
 	let animate = false;
 
@@ -36,6 +37,9 @@
 					target="_blank">@Unqork</a
 				>
 			</p>
+			<div class="fixed bottom-0 flex justify-end w-full px-10 py-6 flex-0 md:relative md:py-0">
+				<ChatPopup />
+			</div>
 		{/if}
 	</div>
 </div>
