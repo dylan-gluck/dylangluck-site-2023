@@ -18,7 +18,7 @@
 	<div class="container flex flex-col mx-auto">
 		{#if animate}
 			<h2
-				in:fly={{ y: 200, opacity: 0, delay: 200, easing: backOut }}
+				in:fly={{ y: 200, opacity: 0, delay: 600, easing: backOut }}
 				out:fade
 				class="flex items-center gap-2 py-4 font-semibold uppercase"
 			>
@@ -40,7 +40,7 @@
 						aria-label="{project.name} on Github by Dylan Gluck"
 						target="_blank"
 						class="flex flex-col gap-1 cursor-pointer group"
-						in:fly={{ y: 50, opacity: 0, easing: backOut, delay: 200 + 50 * i }}
+						in:fly={{ y: 50, opacity: 0, easing: backOut, delay: 600 + 50 * i }}
 						out:fade
 					>
 						<span class="font-bold group-hover:text-primary">{project.name}</span>
