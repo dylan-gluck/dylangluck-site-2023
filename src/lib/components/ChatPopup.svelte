@@ -64,16 +64,16 @@
 			<div in:slide><Icon icon="basil:chat-solid" class="text-2xl" /></div>
 		{/if}</summary
 	>
-	<div
-		in:slide={{ easing: backOut }}
-		class="flex flex-col justify-end p-2 mb-2 transition-all shadow h-60 dropdown-content bg-base-200 rounded-box w-60 md:w-80"
-	>
-		{#if chatOpen}
+	{#if chatOpen}
+		<div
+			in:slide={{ easing: backOut }}
+			class="flex flex-col justify-end p-2 mb-2 transition-all shadow h-60 dropdown-content bg-base-200 rounded-box w-60 md:w-80"
+		>
 			<div class="flex flex-col justify-end flex-1 overflow-y-auto">
 				{#each $messages as message, i}
 					{#if message.role !== 'system'}
 						<div
-							in:slide={{ delay: 100 + 100 * i, easing: backOut }}
+							in:slide={{ delay: 100, easing: backOut }}
 							class="chat"
 							class:chat-start={message.role == 'assistant'}
 							class:chat-end={message.role == 'user'}
@@ -101,6 +101,6 @@
 					>
 				</div>
 			</form>
-		{/if}
-	</div>
+		</div>
+	{/if}
 </details>
