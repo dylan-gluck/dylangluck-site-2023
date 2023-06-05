@@ -7,7 +7,7 @@
 	import { backOut } from 'svelte/easing';
 </script>
 
-<li in:slide={{ delay: 100, duration: 100, ease: backOut }} out:fade>
+<li>
 	<a
 		href="/"
 		aria-label={$t('nav.home')}
@@ -15,7 +15,7 @@
 		class:text-primary={$page.url.pathname == '/'}>{$t('nav.home')}</a
 	>
 </li>
-<li in:slide={{ delay: 150, duration: 100, ease: backOut }} out:fade>
+<li>
 	<a
 		href="https://github.com/dylan-gluck"
 		target="_blank"
@@ -23,7 +23,7 @@
 		class="cursor-pointer md:hover:text-primary">{$t('nav.github')}</a
 	>
 </li>
-<li in:slide={{ delay: 200, duration: 100, ease: backOut }} out:fade>
+<li>
 	<a
 		href="https://www.linkedin.com/in/dylangluck/"
 		target="_blank"
@@ -31,7 +31,7 @@
 		class="cursor-pointer md:hover:text-primary">{$t('nav.linkedin')}</a
 	>
 </li>
-<li in:slide={{ delay: 250, duration: 100, ease: backOut }} out:fade>
+<li>
 	<a
 		href="/resume"
 		aria-label={$t('nav.resume')}
@@ -39,7 +39,7 @@
 		class:text-primary={$page.url.pathname == '/resume'}>{$t('nav.resume')}</a
 	>
 </li>
-<li in:slide={{ delay: 300, duration: 100, ease: backOut }} out:fade>
+<li>
 	{#if $theme == 'light'}
 		<button
 			aria-label="Enable dark mode"

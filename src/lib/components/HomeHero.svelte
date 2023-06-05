@@ -1,6 +1,6 @@
 <script>
 	import { onMount } from 'svelte';
-	import { slide, fade } from 'svelte/transition';
+	import { fade, fly } from 'svelte/transition';
 	import { backOut } from 'svelte/easing';
 	import { t, locale } from '$lib/i18n';
 	import RotateWords from '$lib/components/RotateWords.svelte';
@@ -15,12 +15,12 @@
 	});
 </script>
 
-<div class="grid flex-1 w-full p-6 place-items-center bg-base-100">
+<div class="grid flex-1 w-full p-6 bg-transparent place-items-center">
 	<div class="container pt-20 mx-auto md:pt-0">
 		{#if animate}
 			{#key $locale}
 				<h1
-					in:slide={{ delay: 100, easing: backOut }}
+					in:fly={{ y: 100, delay: 100, easing: backOut }}
 					out:fade={{ duration: 100 }}
 					class="text-5xl font-bold font-display md:text-6xl lg:text-7xl xl:text-8xl"
 				>
@@ -29,7 +29,7 @@
 					{$t('hero.title_2')}
 				</h1>
 				<p
-					in:slide={{ delay: 200, easing: backOut }}
+					in:fly={{ y: 50, delay: 200, easing: backOut }}
 					out:fade={{ duration: 100 }}
 					class="flex flex-wrap items-center gap-1 py-6"
 				>

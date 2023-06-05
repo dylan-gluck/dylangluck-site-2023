@@ -14,7 +14,7 @@
 	});
 </script>
 
-<div class="grid w-full p-6 place-items-start flex-0 bg-base-100">
+<div class="grid w-full p-6 bg-transparent place-items-start flex-0">
 	<div class="container flex flex-col mx-auto">
 		{#if animate}
 			<h2
