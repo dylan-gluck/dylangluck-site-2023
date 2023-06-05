@@ -48,7 +48,7 @@
 		}
 	}
 	.light {
-		position: absolute;
+		position: fixed;
 		left: 50%;
 		top: 50%;
 		translate: -50% -50%;
