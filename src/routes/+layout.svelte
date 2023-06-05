@@ -8,27 +8,27 @@
 	onMount(() => {
 		let isMobile = /(iphone|android|blackberry|webos)/i.test(navigator.userAgent);
 
-		if (!isMobile) {
-			window.onpointermove = (event) => {
-				const { clientX, clientY } = event;
+		window.onpointermove = (event) => {
+			const { clientX, clientY } = event;
 
-				light.animate(
-					{
-						left: `${clientX}px`,
-						top: `${clientY}px`
-					},
-					{ duration: 5000, fill: 'forwards' }
-				);
-			};
-		}
+			light.animate(
+				{
+					left: `${clientX}px`,
+					top: `${clientY}px`
+				},
+				{ duration: 5000, fill: 'forwards' }
+			);
+		};
 	});
 </script>
 
 <main data-theme={$theme}>
-	<div
-		class="z-0 light aspect-square h-1/3 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%"
-		bind:this={light}
-	/>
+	{#if $theme == 'dark'}
+		<div
+			class="z-0 light aspect-square h-1/3 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%"
+			bind:this={light}
+		/>
+	{/if}
 	<div class="z-0 blur" />
 	<slot />
 </main>
