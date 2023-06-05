@@ -1,6 +1,6 @@
 <script>
 	import { writable } from 'svelte/store';
-	import { slide, fade } from 'svelte/transition';
+	import { slide, fade, fly } from 'svelte/transition';
 	import { backOut } from 'svelte/easing';
 	import Icon from '@iconify/svelte';
 
@@ -64,16 +64,16 @@
 			<span in:slide><Icon icon="basil:chat-solid" class="text-2xl" /></span>
 		{/if}</summary
 	>
-	{#if chatOpen}
-		<div
-			in:slide={{ easing: backOut }}
-			class="flex flex-col justify-end p-2 mb-2 transition-all shadow h-60 dropdown-content bg-base-200 rounded-box w-60 md:w-80"
-		>
-			<div class="flex flex-col justify-end flex-1 overflow-y-auto">
+	<div
+		in:slide={{ easing: backOut }}
+		class="flex flex-col justify-end p-2 mb-2 transition-all shadow h-60 dropdown-content bg-base-200 rounded-box w-60 md:w-80"
+	>
+		{#if chatOpen}
+			<div class="flex flex-col justify-end flex-1 overflow-y-scroll hide-scrollbar">
 				{#each $messages as message, i}
 					{#if message.role !== 'system'}
 						<div
-							in:slide={{ delay: 100, easing: backOut }}
+							in:fly={{ y: 50, opacity: 0, delay: 100, easing: backOut }}
 							class="chat"
 							class:chat-start={message.role == 'assistant'}
 							class:chat-end={message.role == 'user'}
@@ -101,6 +101,15 @@
 					>
 				</div>
 			</form>
-		</div>
-	{/if}
+		{/if}
+	</div>
 </details>
+
+<style>
+	.hide-scrollbar {
+		&::-webkit-scrollbar {
+			width: 0;
+			background: transparent;
+		}
+	}
+</style>
