@@ -12,13 +12,13 @@
 		<div class="flex-1">
 			<a href="/" class="font-bold">Dylan Navajas Gluck</a>
 		</div>
-		<div class="flex-none hidden lg:block">
+		<div class="flex-none hidden md:block">
 			<ul class="flex gap-6 px-2 mx-2">
 				<NavItems />
 				<LangSwitch header="true" />
 			</ul>
 		</div>
-		<div class="flex-none lg:hidden">
+		<div class="flex-none md:hidden">
 			<button
 				aria-label="Show menu"
 				class="btn btn-square btn-ghost"

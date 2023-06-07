@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 	import { fade, slide, fly } from 'svelte/transition';
 	import { backOut } from 'svelte/easing';
-	import { fullTime, contracts } from './data';
+	import { fullTime, contracts, education } from './data';
 	import Navbar from '$lib/components/Navbar.svelte';
 	import Icon from '@iconify/svelte';
 
@@ -27,7 +27,7 @@
 </svelte:head>
 
 <Navbar />
-<section class="relative z-10 p-6">
+<section class="relative p-6">
 	<div class="container py-20 mx-auto">
 		{#if animate}
 			<button
@@ -48,22 +48,19 @@
 				>
 					<h2 class="mb-3 text-2xl font-bold xl:text-3xl font-display">Education</h2>
 				</div>
-				<div
-					in:fly={{ y: 50, opacity: 0, delay: 100, easing: backOut }}
-					out:fade
-					class="col-span-full md:col-span-4"
-				>
-					<h3 class="text-xl font-semibold font-display">Savannah College of Art & Design</h3>
-					<p class="text-xs tracking-wide uppercase dark:text-gray-400">BA Graphic Design</p>
-					<time class="text-xs tracking-wide uppercase dark:text-gray-400">2009 &mdash; 2013</time>
-					<ul class="max-w-lg mt-3 ml-4 text-sm list-disc">
-						<li class="list-item">
-							Classically trained in traditional graphic design process and technique
-						</li>
-						<li class="list-item">Focus on user experience & interaction</li>
-						<li class="list-item">Graduated with a 4.0 GPA</li>
-					</ul>
-				</div>
+				{#each education as item, i}
+					<div
+						in:fly={{ y: 50, opacity: 0, delay: 100, easing: backOut }}
+						out:fade
+						class="col-span-full md:col-span-4"
+					>
+						<h3 class="text-xl font-semibold font-display">{item.school}</h3>
+						<p class="text-xs tracking-wide uppercase dark:text-gray-400">{item.degree}</p>
+						<time class="text-xs tracking-wide uppercase dark:text-gray-400">{@html item.date}</time
+						>
+						{@html item.description}
+					</div>
+				{/each}
 			</div>
 			<div in:slide={{ axis: 'x', delay: 100, easing: backOut }} out:fade class="divider" />
 		{/if}
@@ -149,19 +146,19 @@
 				href="mailto:hello@dylangluck.com"
 				target="_blank"
 				class="hover:text-primary"
-				in:slide={{ delay: 300, easing: backOut }}>hello@dylangluck.com</a
+				in:fly={{ y: 50, opacity: 0, delay: 150, easing: backOut }}>hello@dylangluck.com</a
 			>
 			<a
 				href="https://linkedin.com/in/dylangluck"
 				target="_blank"
 				class="hover:text-primary"
-				in:slide={{ delay: 300, easing: backOut }}>LinkedIn</a
+				in:fly={{ y: 50, opacity: 0, delay: 150, easing: backOut }}>LinkedIn</a
 			>
 			<a
 				href="https://github.com/dylan-gluck"
 				target="_blank"
 				class="hover:text-primary"
-				in:slide={{ delay: 300, easing: backOut }}>Github</a
+				in:fly={{ y: 50, opacity: 0, delay: 150, easing: backOut }}>Github</a
 			>
 		</div>
 	</div>

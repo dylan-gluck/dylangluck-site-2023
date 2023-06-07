@@ -6,8 +6,6 @@
 	let light;
 
 	onMount(() => {
-		let isMobile = /(iphone|android|blackberry|webos)/i.test(navigator.userAgent);
-
 		window.onpointermove = (event) => {
 			const { clientX, clientY } = event;
 
