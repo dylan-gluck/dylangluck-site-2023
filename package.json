@@ -24,6 +24,7 @@
 	"type": "module",
 	"dependencies": {
 		"@octokit/core": "^4.2.1",
-		"daisyui": "^2.51.6"
+		"daisyui": "^3.0.0",
+		"openai": "^3.2.1"
 	}
 }

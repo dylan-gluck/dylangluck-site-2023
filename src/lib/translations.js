@@ -11,11 +11,10 @@ export default {
 		'hero.words_2': 'usable',
 		'hero.words_3': 'responsive',
 		'hero.words_4': 'accessible',
-		'hero.currently': 'Currently: UX Engineering Manager',
+		'hero.currently': 'Currently',
+		'hero.position': 'UX Engineering Manager',
 		'hero.recent': 'Recent Projects',
-		'gpt.prompt': 'Write a haiku about UX design in English',
-		'gpt.loading': 'Thinking...',
-		'gpt.signature': '&mdash; With love, ChatGPT'
+		'gpt.prompt': "Ask me anything about Dylan, I'm here to help!"
 	},
 	es: {
 		'nav.home': 'Inicial',
@@ -29,10 +28,9 @@ export default {
 		'hero.words_2': 'utilizables',
 		'hero.words_3': 'responsivas',
 		'hero.words_4': 'accesibles',
-		'hero.currently': 'Actualmente: Gerente de Ingeniería UX',
+		'hero.currently': 'Actualmente',
+		'hero.position': 'Gerente de Ingeniería UX',
 		'hero.recent': 'Proyectos Recientes',
-		'gpt.prompt': 'Escribe un haiku sobre diseño UX en español',
-		'gpt.loading': 'Pensando...',
-		'gpt.signature': '&mdash; Con amor, ChatGPT'
+		'gpt.prompt': 'Pregúntame cualquier cosa sobre Dylan, ¡estoy aquí para ayudarte!'
 	}
 };

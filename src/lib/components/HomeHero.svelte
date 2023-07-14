@@ -1,23 +1,51 @@
 <script>
-	import { t } from '$lib/i18n';
+	import { onMount } from 'svelte';
+	import { fade, fly } from 'svelte/transition';
+	import { backOut } from 'svelte/easing';
+	import { t, locale } from '$lib/i18n';
 	import RotateWords from '$lib/components/RotateWords.svelte';
+	import ChatPopup from '$lib/components/ChatPopup.svelte';
+
+	let animate = false;
+
+	onMount(() => {
+		setTimeout(() => {
+			animate = true;
+		}, 300);
+	});
 </script>
 
-<div class="grid flex-1 w-full p-6 place-items-center bg-base-100">
-	<div class="w-full pt-20 md:pt-0">
-		<h1 class="text-5xl font-bold md:text-6xl lg:text-7xl">
-			{@html $t('hero.title_1')}
-			<RotateWords />
-			{$t('hero.title_2')}
-		</h1>
-		<p class="py-6">
-			{$t('hero.currently')}
-			<a
-				href="http://unqork.com"
-				aria-label="Unqork company website"
-				class="cursor-pointer text-primary"
-				target="_blank">@Unqork</a
-			>
-		</p>
+<div class="grid flex-1 w-full p-6 bg-transparent place-items-center">
+	<div class="container pt-20 mx-auto md:pt-0">
+		{#if animate}
+			{#key $locale}
+				<h1
+					in:fly={{ y: 100, delay: 100, easing: backOut }}
+					out:fade={{ duration: 100 }}
+					class="text-5xl font-bold font-display md:text-6xl lg:text-7xl xl:text-8xl"
+				>
+					{@html $t('hero.title_1')}
+					<RotateWords />
+					{$t('hero.title_2')}
+				</h1>
+				<p
+					in:fly={{ y: 50, delay: 200, easing: backOut }}
+					out:fade={{ duration: 100 }}
+					class="flex flex-wrap items-center gap-1 py-6"
+				>
+					<span class="badge badge-info badge-sm badge-outline">{$t('hero.currently')}</span>
+					<span>{$t('hero.position')}</span>
+					<a
+						href="http://unqork.com"
+						aria-label="Unqork company website"
+						class="no-underline cursor-pointer link md:hover:text-primary"
+						target="_blank">@Unqork</a
+					>
+				</p>
+			{/key}
+			<div class="flex justify-end w-full px-10 py-6 flex-0 md:relative md:py-0">
+				<ChatPopup />
+			</div>
+		{/if}
 	</div>
 </div>
